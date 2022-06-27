@@ -144,6 +144,38 @@ body {
     color: var(--accent-color);
 }
 
+/* auth-icons */
+.auth-nav-mail, 
+.auth-nav-telephone {
+    display: flex;
+    padding: 0; 
+    align-items: center;
+    justify-content: center;
+    background-color: none;  
+}
+
+.auth-icon-mail {
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    fill: var(--primary-text-color);
+    background-image: url(../images/images-icons/envelope.svg); 
+    cursor: pointer;  
+}
+
+/* ТРЕБА ХОВЕР НА ІКОНКУ */
+.auth-icon:hover,
+.auth-icon:focus {
+    fill: red;
+}
+
+.auth-icon-telephone {
+    margin-right: 10px;
+    background-repeat: no-repeat;
+    fill: var(--primary-text-color);
+    background-image: url(../images/images-icons/smartphone.svg); 
+    cursor: pointer;   
+}
+
 /* auth-nav */
 .auth-nav {
     display: flex;
@@ -276,10 +308,49 @@ body {
     line-height: 1.71;
 }
 
+/* feature-icons */
+.feature-icon {
+    display: flex;
+    margin-bottom: 30px;
+    width: 270px;
+    height: 120px;
+    border: none;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    background-color: #F5F4FA;
+ }
+
+.feature-antenna {
+    background-image: url(../images/images-icons/antenna.svg);
+    background-repeat: no-repeat;
+    background-color: none;  
+}
+
+.feature-clock {
+    background-image: url(../images/images-icons/clock.svg);
+    background-repeat: no-repeat;
+    background-color: none;  
+}
+
+.feature-diagram {
+    background-image: url(../images/images-icons/diagram.svg);
+    background-repeat: no-repeat;
+    background-color: none;  
+}
+
+.feature-astronaut {
+    background-image: url(../images/images-icons/astronaut.svg);
+    background-repeat: no-repeat;
+    background-color: none;  
+}
+
+
 /* work */
 .about {
     padding-top: 0;
 }
+
 .work .link {
     display: flex;
     flex-direction: row;
