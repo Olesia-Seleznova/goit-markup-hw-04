@@ -62,7 +62,7 @@ body {
 .section {
     padding-bottom: 94px;
     padding-top: 94px;
-   }
+}
 
 .page-header {
     background-color: var(--secondary-background-color);
@@ -85,7 +85,7 @@ body {
     display: flex;
     align-items: center;
     margin-right: auto;
-   }
+}
 
 /* logo */
 .page-logo {
@@ -162,10 +162,9 @@ body {
     cursor: pointer;  
 }
 
-/* ТРЕБА ХОВЕР НА ІКОНКУ */
-.auth-icon:hover,
-.auth-icon:focus {
-    fill: red;
+.auth-icon-mail.btn:hover,
+.auth-icon-mail.btn:focus {
+    fill: var(--accent-color);
 }
 
 .auth-icon-telephone {
@@ -209,9 +208,19 @@ body {
 }
 
 .hero-section {
+    max-width: 1600px;
+    min-height: 600px;
+    margin-left: auto;
+    margin-right:auto;
     padding-top: 200px;
     padding-bottom: 200px;
     text-align: center;
+    outline: none;
+    background-image: linear-gradient(to right 0px 4px 4px rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.25) url(../images/banner/Img.png));
+    background-image: url(../images/banner/Img.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
     background-color: #2F303A;
 }
 
@@ -443,6 +452,52 @@ body {
     background-color: var(--primary-text-color);
 }
 
+/* Networc items */
+/* .networks {
+    display: flex;
+    margin-bottom: 30px;
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--secondary-background-color);
+
+    border-color: black;
+} */
+
+.social-networks-icon {
+    display: flex;
+    /* margin-bottom: 30px; */
+    margin-right: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    border: none;
+    background-color: var(--secondary-background-color);
+
+    border-color: black;
+ } 
+
+ .social-networks-icon:not(:last-child) {
+    margin-right: 10px;
+ }
+
+ .social-networks-icon .link {
+    width: 20px;
+    height: 20px;
+    fill: var(--primary-text-color);
+    background-image: url(../images/images-icons/instagram.svg); 
+    cursor: pointer; 
+    background-repeat: no-repeat;
+    background-color: red; 
+ } 
+
+ .icon-instagram {
+    background-image: url(../images/images-icons/instagram.svg)
+ }
+
+
 /* footer */
 .footer-section {
     padding-top: 60px;
@@ -548,7 +603,8 @@ body {
     flex-wrap: wrap;
     margin-top: 0;
     width: 1200px;
- }
+    cursor: pointer;
+}
  
 .work-text {
     margin-bottom: 20px;
@@ -582,6 +638,10 @@ body {
     margin-bottom:                                                                                                                                                                                                                                                                                                                                                      30px;
     border: 1px solid #EEEEEE;;
     background-color: var(--secondary-background-color);
+}
+
+.flex-conteiner .link:hover {
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .flex-conteiner:nth-child(3n) {
