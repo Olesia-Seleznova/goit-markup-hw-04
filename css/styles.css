@@ -150,8 +150,7 @@ body {
     display: flex;
     padding: 0; 
     align-items: center;
-    justify-content: center;
-    background-color: none;  
+    justify-content: center;  
 }
 
 .auth-icon-mail {
@@ -162,8 +161,8 @@ body {
     cursor: pointer;  
 }
 
-.auth-icon-mail.btn:hover,
-.auth-icon-mail.btn:focus {
+.auth-icon-mail:hover,
+.auth-icon-mail:focus {
     fill: var(--accent-color);
 }
 
@@ -171,6 +170,7 @@ body {
     margin-right: 10px;
     background-repeat: no-repeat;
     fill: var(--primary-text-color);
+    
     background-image: url(../images/images-icons/smartphone.svg); 
     cursor: pointer;   
 }
@@ -216,12 +216,13 @@ body {
     padding-bottom: 200px;
     text-align: center;
     outline: none;
-    background-image: linear-gradient(to right 0px 4px 4px rgba(0, 0, 0, 0.25) rgba(0, 0, 0, 0.25) url(../images/banner/Img.png));
+    background-image: linear-gradient(to right, rgba(0,0,0,0.4), rgba(0,0,0,0.4)s);
     background-image: url(../images/banner/Img.png);
     background-repeat: no-repeat;
     background-position: center;
     background-size: cover;
-    background-color: #2F303A;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    background-color: rgba(47, 48, 58, 0.4);
 }
 
 .hero-title {
@@ -453,50 +454,59 @@ body {
 }
 
 /* Networc items */
-/* .networks {
-    display: flex;
-    margin-bottom: 30px;
-    margin-right: 10px;
-    align-items: center;
-    justify-content: center;
-    border-radius: 50%;
-    border: none;
-    background-color: var(--secondary-background-color);
+.networks {
+    width: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
 
-    border-color: black;
-} */
+.social-networks {
+    display: flex;  
+}
 
 .social-networks-icon {
     display: flex;
-    /* margin-bottom: 30px; */
-    margin-right: 10px;
+    margin-bottom: 30px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
     align-items: center;
     justify-content: center;
-    border-radius: 50%;
     border: none;
+    cursor: pointer;
     background-color: var(--secondary-background-color);
+}
 
-    border-color: black;
+.social-networks-icon:not(:last-child) {
+    margin-right: 10px;  
  } 
 
- .social-networks-icon:not(:last-child) {
-    margin-right: 10px;
- }
+.social-networks-icon:hover,
+.social-networks-icon:focus {
+    background-color: var(--accent-color);
+}
 
- .social-networks-icon .link {
-    width: 20px;
-    height: 20px;
+.label {
     fill: var(--primary-text-color);
-    background-image: url(../images/images-icons/instagram.svg); 
-    cursor: pointer; 
     background-repeat: no-repeat;
-    background-color: red; 
- } 
+    background-position: center;
+}
 
- .icon-instagram {
-    background-image: url(../images/images-icons/instagram.svg)
+    .icon-instagram {
+    background-image: url(../images/images-icons/instagram.svg);  
  }
 
+.icon-twitter {
+    background-image: url(../images/images-icons/twitter.svg);
+}
+
+.icon-facebook {
+    background-image: url(../images/images-icons/facebook.svg);
+}
+
+.icon-linkedin {
+    background-image: url(../images/images-icons/linkedin.svg);
+}
 
 /* footer */
 .footer-section {
@@ -519,7 +529,6 @@ body {
 
 .footer-addres {
     margin-top: 20px;
-    padding-bottom: 60px;
 }
 
 .footer-adress-list {
@@ -607,7 +616,8 @@ body {
 }
  
 .work-text {
-    margin-bottom: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 0;
 
     font-size: 16px;
     line-height: 30px;
@@ -622,7 +632,7 @@ body {
 }
 
 .list-title {
-    margin-top: 20px;
+    padding-top: 20px;
     margin-bottom: 4px;
     
     font-size: 18px;
