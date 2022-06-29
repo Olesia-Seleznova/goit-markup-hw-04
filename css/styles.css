@@ -453,7 +453,7 @@ body {
     background-color: var(--primary-text-color);
 }
 
-/* Networc items */
+/* Network items */
 .networks {
     width: 200px;
     margin-left: auto;
@@ -492,7 +492,7 @@ body {
     background-position: center;
 }
 
-    .icon-instagram {
+.icon-instagram {
     background-image: url(../images/images-icons/instagram.svg);  
  }
 
@@ -506,6 +506,58 @@ body {
 
 .icon-linkedin {
     background-image: url(../images/images-icons/linkedin.svg);
+}
+
+/* Customers */
+.customers-list {
+    display: flex;
+}
+
+.customer {
+    display: flex;
+    margin-right: 30px;
+    width: 170px;
+    height: 92px;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #AFB1B8;
+    border-radius: 4px; 
+    cursor: pointer;
+    background-color: var(--secondary-background-color);
+}
+
+.customer:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customer-1-icon {
+    background-image: url(../images/images-icons/Logo-1.svg);
+}
+
+.customer-2-icon {
+    background-image: url(../images/images-icons/Logo-2.svg);
+}
+
+.customer-3-icon {
+    background-image: url(../images/images-icons/Logo-3.svg);
+}
+
+.customer-4-icon {
+    background-image: url(..//images/images-icons/Logo-4.svg);
+    fill: var(--primary-text-color);
+}
+
+.customer-5-icon {
+    background-image: url(..//images/images-icons/Logo-5.svg);
+}
+
+.customer-6-icon {
+    background-image: url(..//images/images-icons/Logo-6.svg);
+}
+
+.customer:hover,
+.customer:focus {
+    fill: var(--accent-color);  
 }
 
 /* footer */
@@ -566,6 +618,27 @@ body {
 .contacts-link:focus {
     color:var(--accent-color);
 }
+
+/* Network contacts */
+.network-contacts {
+    display: flex;
+    width: 206px;
+    margin-left: auto;
+    margin-right:auto;
+}
+
+.joing-network {
+    color: var(--secondary-background-color);
+
+}
+
+.network-contacts-icon {
+    display: flex;
+    margin: 0;
+    margin-bottom: 0;
+}
+
+
 
 /* potfolio/css */
 .portfolio-container {
