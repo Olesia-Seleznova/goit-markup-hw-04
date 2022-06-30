@@ -481,18 +481,19 @@ body {
     margin-right: 10px;  
  } 
 
-.social-networks-icon:hover,
-.social-networks-icon:focus {
+.social-networks-icon:hover {
     background-color: var(--accent-color);
+    fill: var(--secondary-background-color);
 }
 
 .label {
-    fill: var(--primary-text-color);
+    padding: 0;
     background-repeat: no-repeat;
     background-position: center;
 }
 
 .icon-instagram {
+    fill: var(--primary-text-color);
     background-image: url(../images/images-icons/instagram.svg);  
  }
 
@@ -507,6 +508,7 @@ body {
 .icon-linkedin {
     background-image: url(../images/images-icons/linkedin.svg);
 }
+    
 
 /* Customers */
 .customers-list {
@@ -530,6 +532,14 @@ body {
     margin-right: 30px;
 }
 
+.customers-li {
+fill: var(--primary-text-color);
+}
+
+.customers-li:hover {
+    fill: var(--accent-color);
+}
+
 .customer-1-icon {
     background-image: url(../images/images-icons/Logo-1.svg);
 }
@@ -544,7 +554,6 @@ body {
 
 .customer-4-icon {
     background-image: url(..//images/images-icons/Logo-4.svg);
-    fill: var(--primary-text-color);
 }
 
 .customer-5-icon {
@@ -555,12 +564,14 @@ body {
     background-image: url(..//images/images-icons/Logo-6.svg);
 }
 
-.customer:hover,
-.customer:focus {
-    fill: var(--accent-color);  
-}
 
 /* footer */
+
+.footer-box {
+    display: flex;
+    flex-wrap: wrap ;
+}
+
 .footer-section {
     padding-top: 60px;
     padding-bottom: 60px;
@@ -614,39 +625,41 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.contacts-link:hover,
-.contacts-link:focus {
+.contacts-link:hover {
     color:var(--accent-color);
 }
 
 /* Network contacts */
 .network-contacts {
     display: flex;
+    flex-wrap: wrap;
     width: 206px;
     margin-left: auto;
     margin-right:auto;
 }
 
 .joing-network {
+    margin-bottom: 20px;
     color: var(--secondary-background-color);
-
 }
 
 .network-contacts-icon {
     display: flex;
-    margin: 0;
+    padding: 0;
+    margin-top: 0;
     margin-bottom: 0;
 }
 
-
+.contacts {
+   background-color: var(--primary-text-color) ; 
+}
 
 /* potfolio/css */
 .portfolio-container {
     display: flex;
     margin-top: 0;
     margin-bottom: 50px;
-    justify-content: center;
-    
+    justify-content: center; 
 }
 
 .portfolio-btn {
