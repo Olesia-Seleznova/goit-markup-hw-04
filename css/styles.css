@@ -122,6 +122,10 @@ body {
     margin-left: 50px   ;
 }
 
+.nav-icon {
+fill: currentColor;
+}
+
 .site-nav .link {
     display: block;
     padding-top: 35px;
@@ -194,18 +198,16 @@ body {
 }
 
 .auth-nav .link {
-    display: block;
+    display: flex;
     padding-top: 35px;
     padding-bottom: 30px;
-
     align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
-
     color: #757575;
-    text-decoration: none; 
+    text-decoration: none;
 }
 
 .auth-nav .item + .item {
