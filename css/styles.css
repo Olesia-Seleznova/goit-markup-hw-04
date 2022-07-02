@@ -150,20 +150,28 @@ body {
     display: flex;
     padding: 0; 
     align-items: center;
-    justify-content: center;  
+    justify-content: center;
+    color: var(--primary-text-color)  
 }
 
+.auth-nav-mail:hover,
+.auth-nav-mail:focus {
+  color: var(--accent-color);  
+}
+
+
 .auth-icon-mail {
+    align-items: center;
     margin-right: 10px;
     background-repeat: no-repeat;
-    fill: var(--primary-text-color);
+    fill: currentColor;
     background-image: url(../images/images-icons/envelope.svg); 
     cursor: pointer;  
 }
 
 .auth-icon-mail:hover,
 .auth-icon-mail:focus {
-    fill: var(--accent-color);
+    fill: currentColor;
 }
 
 .auth-icon-telephone {
@@ -176,8 +184,13 @@ body {
 }
 
 /* auth-nav */
-.auth-nav {
+.page .auth-nav {
     display: flex;
+}
+
+.auth-nav .item {
+    display: flex;
+    align-items: center;
 }
 
 .auth-nav .link {
@@ -185,11 +198,13 @@ body {
     padding-top: 35px;
     padding-bottom: 30px;
 
-    color: #757575;
+    align-items: center;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
     letter-spacing: 0.02em;
+
+    color: #757575;
     text-decoration: none; 
 }
 
@@ -201,6 +216,7 @@ body {
  .auth-nav .link:focus {
     color: var(--accent-color);
  }
+
 
 /* Hero */
 .main-contenet {
