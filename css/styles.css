@@ -618,13 +618,21 @@ body {
 /* footer */
 .footer-section {
     display: flex;
-    flex-wrap: wrap ;
+    width: 1200px;
     padding-top: 60px;
     padding-bottom: 60px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
     margin-top: 0;
     margin-top: 0;
     background-color: #2F303A;
 }
+
+.footer-container {
+    width: 231px;
+} 
 
 .logo {
     margin-bottom: 20px;
@@ -680,8 +688,10 @@ body {
     display: flex;
     flex-wrap: wrap;
     width: 206px;
-    margin-left: auto;
+    margin-left: 70px;
     margin-right:auto;
+    padding-bottom: 100px;
+    align-items: center;
 }
 
 .joing-network {
@@ -693,7 +703,7 @@ body {
     display: flex;
     padding: 0;
     margin-top: 0;
-    margin-bottom: 0;
+    margin-bottom: 0;;
 }
 
 .contacts {
