@@ -416,6 +416,14 @@ body {
 }
 
 .social-networks-icon {
+    display: flex; 
+}
+
+.social-networks-icon:not(:last-child) {
+    margin-right: 10px;  
+ } 
+
+.social-icon-box {
     display: flex;
     width: 44px;
     height: 44px;
@@ -423,59 +431,19 @@ body {
     align-items: center;
     justify-content: center;
     border: none;
-    cursor: pointer;
+    color: var(--primary-text-color);
     background-color: var(--secondary-background-color);
 }
 
-.social-networks-icon:not(:last-child) {
-    margin-right: 10px;  
- } 
-
-.social-networks-icon:hover {
+.social-icon-box:hover {
     background-color: var(--accent-color);
+    color: var(--secondary-background-color);
+}
+
+.soc-icon {
+    align-items: center;
+    justify-content: center;
     fill: currentColor;
-}
-
-.label {
-    padding: 0;
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-.icon-instagram {
-    background-image: url(../images/images-icons/instagram.svg); 
-    fill: var(--primary-text-color); 
- }
- 
-.icon-instagram:hover {
-    fill: var(--secondary-background-color);
-}
-
-.icon-twitter {
-    background-image: url(../images/images-icons/twitter.svg);
-    fill:  var(--primary-text-color);
-}
-
-.icon-twitter:hover {
-    fill: var(--secondary-background-color); 
-}
-
-.icon-facebook {
-    background-image: url(../images/images-icons/facebook.svg);
-    fill: var(--primary-text-color);
-}
-
-.icon-facebook {
-    fill: var(--secondary-background-color);
-}
-
-.icon-linkedin {
-    background-image: url(../images/images-icons/linkedin.svg);
-    fill: var(--primary-text-color);
-}
-    
-.icon-linkedin:hover {
-    fill: var(--secondary-background-color);
 }
 
 /* Customers */
