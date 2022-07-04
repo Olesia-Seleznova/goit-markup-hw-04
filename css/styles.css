@@ -145,36 +145,10 @@ body {
 }
 
 /* auth-icons */
-.auth-icon-mail {
-    align-items: center;
+.contact-icon {
     margin-right: 10px;
-    fill: var(--primary-text-color);
-    background-image: url(../images/images-icons/envelope.svg); 
-    background-repeat: no-repeat;
-    cursor: pointer;  
-}
-
-.auth-icon-mail:hover,
-.auth-icon-mail:focus {
     fill: currentColor;
 }
-.auth-icon-telephone {
-    align-items: center;
-    margin-right: 10px;
-    fill: var(--primary-text-color);
-    background-image: url(../images/images-icons/smartphone.svg); 
-    background-repeat: no-repeat;
-    cursor: pointer;   
-}
-
-.auth-icon-telephone:hover,
-.auth-icon-telephone:focus {
-    fill: currentColor;
-}
-
-.nav-icon {
-    fill: currentColor;
-    }
 
 /* auth-nav */
 .page .auth-nav {
@@ -207,7 +181,6 @@ body {
  .auth-nav .link:focus {
     color: var(--accent-color);
  }
-
 
 /* Hero */
 .main-contenet {
