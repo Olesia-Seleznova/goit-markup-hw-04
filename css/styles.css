@@ -307,31 +307,6 @@ body {
     background-color: #F5F4FA;
  }
 
-.feature-antenna {
-    background-image: url(../images/images-icons/antenna.svg);
-    background-repeat: no-repeat;
-    background-color: none;  
-}
-
-.feature-clock {
-    background-image: url(../images/images-icons/clock.svg);
-    background-repeat: no-repeat;
-    background-color: none;  
-}
-
-.feature-diagram {
-    background-image: url(../images/images-icons/diagram.svg);
-    background-repeat: no-repeat;
-    background-color: none;  
-}
-
-.feature-astronaut {
-    background-image: url(../images/images-icons/astronaut.svg);
-    background-repeat: no-repeat;
-    background-color: none;  
-}
-
-
 /* work */
 .about {
     padding-top: 0;
