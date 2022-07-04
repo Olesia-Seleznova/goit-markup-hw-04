@@ -452,6 +452,14 @@ body {
 }
 
 .customers-li {
+    display: flex;  
+}
+
+.customers-li:not(:last-child) {
+    margin-right: 30px;
+}
+
+.customer-icon {
     display: flex;
     width: 170px;
     height: 92px;
@@ -459,82 +467,26 @@ body {
     justify-content: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px; 
-    cursor: pointer;
+    color: var(--primary-text-color);
     background-color: var(--secondary-background-color);
 }
 
-.customers-li:not(:last-child) {
-    margin-right: 30px;
+.customer-icon:hover,
+.customer-icon:focus {
+    color: var(--accent-color);
+    border: 1px solid var(--accent-color);
 }
 
-/* .customers-li:hover {
-    fill: var(--accent-color);
-} */
-
-.customer-1-icon {
-    background-image: url(../images/images-icons/Logo-1.svg);
-    fill: var(--primary-text-color);
-}
-
-.customer-1-icon:hover,
-.customer-1-icon:focus {
-    fill: var(--accent-color);
-}
-
-.customer-2-icon {
-    background-image: url(../images/images-icons/Logo-2.svg);
-    fill: var(--primary-text-color);
-}
-
-.customer-2-icon:hover,
-.customer-2-icon:focus {
-    fill: var(--accent-color);
-}
-
-.customer-3-icon {
-    background-image: url(../images/images-icons/Logo-3.svg);
-    fill: var(--primary-text-color);
-}
-
-.customer-3-icon:hover,
-.customer-3-icon:focus {
-    fill: var(--accent-color);
-}
-
-.customer-4-icon {
-    background-image: url(..//images/images-icons/Logo-4.svg);
-    fill: var(--primary-text-color);
-}
-
-.customer-4-icon:hover,
-.customer-4-icon:focus {
-    fill: var(--accent-color);
-}
-
-.customer-5-icon {
-    background-image: url(..//images/images-icons/Logo-5.svg);
-    fill: var(--primary-text-color);
-}
-
-.customer-5-icon:hover,
-.customer-5-icon:focus {
-    fill: var(--accent-color);
-}
-
-.customer-6-icon {
-    background-image: url(..//images/images-icons/Logo-6.svg);
-    fill: var(--primary-text-color);
-}
-
-.customer-6-icon:hover,
-.customer-6-icon:focus {
-    fill: var(--accent-color);
-}
+.company {
+    align-items: center;
+    justify-content: center;
+    fill: currentColor;
+}   
 
 /* footer */
 .footer-section {
     display: flex;
-    width: 1200px;
+    width: 1600px;
     padding-top: 60px;
     padding-bottom: 60px;
     padding-left: 15px;
@@ -547,6 +499,15 @@ body {
 }
 
 .footer-container {
+    display: flex;
+    width: 1200px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer-block {
     width: 231px;
 } 
 
@@ -599,6 +560,29 @@ body {
     color:var(--accent-color);
 }
 
+.footer-social-icon {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    color: var(--secondary-background-color);
+    background-color: var(--primary-text-color);
+}
+
+.footer-social-icon:hover {
+    background-color: var(--accent-color);
+}
+
+.soc-icon-footer {
+    align-items: center;
+    justify-content: center;
+    fill: currentColor;
+}
+
+
 /* Network contacts */
 .network-contacts {
     display: flex;
@@ -606,8 +590,9 @@ body {
     width: 206px;
     margin-left: 70px;
     margin-right:auto;
-    padding-bottom: 100px;
+    padding-bottom: 0px;
     align-items: center;
+    align-content: center;
 }
 
 .joing-network {
@@ -615,21 +600,9 @@ body {
     color: var(--secondary-background-color);
 }
 
-.network-contacts-icon {
-    display: flex;
-    padding: 0;
+.network-contacts > .social-networks {
     margin-top: 0;
-    margin-bottom: 0;;
 }
-
-.contacts {
-   background-color: var(--primary-text-color) ; 
-}
-
-.label-instagram {
- fill: var(--secondary-background-color);   
-}
-
 
 /* potfolio/css */
 .portfolio-container {
