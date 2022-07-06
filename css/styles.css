@@ -4,6 +4,7 @@
     --secondary-text-color: #212121;
     --accent-color: #2196F3;
     --secondary-background-color: #FFFFFF;
+    --icon-color: #AFB1B8;
 }
 
 /* reset */
@@ -431,7 +432,7 @@ body {
     align-items: center;
     justify-content: center;
     border: none;
-    color: var(--primary-text-color);
+    color: var(--icon-color);
     background-color: var(--secondary-background-color);
 }
 
@@ -468,7 +469,7 @@ body {
     justify-content: center;
     border: 1px solid #AFB1B8;
     border-radius: 4px; 
-    color: var(--primary-text-color);
+    color: var(--icon-color);
     background-color: var(--secondary-background-color);
 }
 
@@ -571,7 +572,7 @@ body {
     justify-content: center;
     border: none;
     color: var(--secondary-background-color);
-    background-color: rgba(0, 0, 0, 0.1);
+    background-color: rgba(255, 255, 255, 0.1);
 }
 
 .footer-social-icon:hover,
@@ -671,7 +672,7 @@ body {
 
 .list-title {
     padding-top: 20px;
-    padding-bottom: 4px;
+    margin-bottom: 4px;
     
     font-size: 18px;
     line-height: 36px;
