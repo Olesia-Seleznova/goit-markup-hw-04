@@ -435,7 +435,8 @@ body {
     background-color: var(--secondary-background-color);
 }
 
-.social-icon-box:hover {
+.social-icon-box:hover,
+.social-icon-box:focus {
     background-color: var(--accent-color);
     color: var(--secondary-background-color);
 }
@@ -556,7 +557,8 @@ body {
     color: rgba(255, 255, 255, 0.6);
 }
 
-.contacts-link:hover {
+.contacts-link:hover,
+.contacts-link:focus {
     color:var(--accent-color);
 }
 
@@ -569,10 +571,11 @@ body {
     justify-content: center;
     border: none;
     color: var(--secondary-background-color);
-    background-color: var(--primary-text-color);
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-.footer-social-icon:hover {
+.footer-social-icon:hover,
+.footer-social-icon:focus {
     background-color: var(--accent-color);
 }
 
@@ -581,7 +584,6 @@ body {
     justify-content: center;
     fill: currentColor;
 }
-
 
 /* Network contacts */
 .network-contacts {
